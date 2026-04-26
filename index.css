@@ -1,0 +1,10 @@
+.viewport {
+   border: saddlebrown;
+    width:30%;
+    min-width: 175px;
+    aspect-ratio: 9/15.9;
+    /*border: grey solid 2px;*/
+    box-shadow:
+            2px 2px 4px #b6b8ba,
+            -2px -2px 4px #fafafd;
+}

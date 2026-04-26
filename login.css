@@ -1,0 +1,135 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+.viewport {
+    width:30%;
+    min-width: 175px;
+    aspect-ratio: 9/15.9;
+    /*border: grey solid 2px;*/
+    box-shadow:
+            2px 2px 4px #b6b8ba,
+            -2px -2px 4px #fafafd;
+}
+
+/*隐藏视口 scroll 布局下的滚动条*/
+.viewport::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20% 0;
+    min-width: 175px;
+    /*width:30vh;*/
+    height: 90%;
+}
+.top-header {
+    max-width: 100%;
+    width: 100%;
+    height:10%;
+    background-color: rgba(255, 126, 24, 0.66);
+    position: sticky;
+    top:0;/*用sticky属性给这里置顶*/
+    z-index: 3;
+}
+
+.goback {/*返回键*/
+    height: 100%;
+    width: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.goback img {
+    width:100%;
+    object-fit: contain;
+}
+.item-1 {
+    display: flex;
+    flex-direction: column;
+    /*background-color: #aa0055;*/
+   flex: 2;
+}
+
+.switch-1 {
+    display: flex;
+}
+.logway {
+    padding: 0 2px;
+    background-color: #ffffff;
+    /*height: 10%;*/
+    font-size: 1vw;
+    color:#616161;
+}
+
+.logbox {
+    display: flex;
+    height: 8vw;
+    flex-direction: column;
+    align-items: center;
+}
+.input-box {
+    outline: none;
+    padding-left: 5px;
+    width:95%;
+    flex:1;
+    border: none;
+    border-radius: 20px 20px;
+    background-color: rgba(232, 232, 232, 0.67);
+    margin-bottom: 10px;
+    font-size: 1vw;
+}
+
+.tick {
+
+}
+
+.log-in {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.logbtn {
+    display: flex;
+    width:80%;
+    min-height: 45px;
+    background-color: #fd6900;
+    color: #fff;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.logbtn p{
+    font-size: 1vw;
+    color: white;
+}
+.logbtn:hover{
+    cursor: pointer;
+    background-color: #ef5600;
+}
+
+.item-2 {
+    /*background-color: #aa0055;*/
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.other-way{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.other-way img {
+    width: 20%;
+    object-fit: contain;
+}
+.other-way img:hover {
+    transform: scale(1.02);
+}
