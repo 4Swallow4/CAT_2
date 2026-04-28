@@ -1,16 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>主页</title>
-  <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>手机端博客布局（修正版）</title>
+    <link rel="stylesheet" href="index.css">
+
+
 </head>
 <body>
 <div class="viewport">
-  <p>11111</p>
-  </div>
+    <!-- 修正：添加完整的搜索栏 -->
+    <div class="search-bar">
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" class="search-input" placeholder="旅行商问题">
+            <button class="search-btn">AI 搜索</button>
+        </div>
+        <button class="add-btn" style="background: #ff7e18; color: white; border: none; width: 24px; height: 24px; border-radius: 50%; font-weight: bold;">+</button>
+    </div>
 
+    <div class="top-header">
+        博客标题
+    </div>
 
+    <div class="switch-2">
+        <div class="switch-item active">推荐</div>
+        <div class="switch-item">最新</div>
+        <div class="switch-item">分类</div>
+    </div>
+
+    <div class="index-content">
+        <div class="content-item">
+            <h3>文章标题 1</h3>
+            <p>这是第一篇文章的内容摘要。这是一个模拟的博客文章，用于展示滚动区域的效果。内容会随着滚动而移动，但顶部和切换栏会保持固定位置。</p>
+        </div>
+
+        <div class="content-item">
+            <h3>文章标题 2</h3>
+            <p>第二篇文章的内容。这个布局使用了Grid来组织整体结构，Flexbox来处理内部元素的排列。顶部搜索栏使用sticky定位实现固定效果。</p>
+        </div>
+
+        <div class="content-item">
+            <h3>文章标题 3</h3>
+            <p>第三篇文章。切换标签栏也使用了sticky定位，这样在滚动内容时，用户始终可以切换不同的分类标签。</p>
+        </div>
+
+        <div class="content-item">
+            <h3>文章标题 4</h3>
+            <p>第四篇文章。整个视口容器有固定的宽高比例（9:15.9），模拟手机屏幕的显示效果，同时设置了最小宽度保证在不同设备上的显示效果。</p>
+        </div>
+
+        <div class="content-item">
+            <h3>文章标题 5</h3>
+            <p>第五篇文章。滚动区域隐藏了滚动条（::-webkit-scrollbar），提供更干净的视觉体验，但仍然可以通过触摸或鼠标滚轮进行滚动。</p>
+        </div>
+
+        <div class="content-item">
+            <h3>文章标题 6</h3>
+            <p>第六篇文章。背景颜色的使用帮助区分不同的功能区域：顶部搜索栏浅灰、标题栏深灰、标签栏灰色、内容区域蓝色系，使布局结构更加清晰。</p>
+        </div>
+    </div>
 </div>
 </body>
 </html>
